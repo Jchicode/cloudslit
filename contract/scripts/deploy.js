@@ -1,10 +1,10 @@
 async function main() {
-    const CloudSlitDao = await ethers.getContractFactory("CloudSlitDao");
-    console.log("Deploying CloudSlitDao...");
+    const FlowShieldDao = await ethers.getContractFactory("FlowShieldDao");
+    console.log("Deploying FlowShieldDao...");
 
-    const contract = await upgrades.deployProxy(CloudSlitDao, { initializer: 'initialize', kind: "transparent",});
+    const contract = await upgrades.deployProxy(FlowShieldDao, { initializer: 'initialize', kind: "transparent",});
     await contract.deployed();
-    console.log("CloudSlitDao deployed to:", contract.address);
+    console.log("FlowShieldDao deployed to:", contract.address);
 }
 
 main()
