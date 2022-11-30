@@ -6,7 +6,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20Burnable
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract CloudSlitDao is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, OwnableUpgradeable {
+contract FlowShieldDao is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, OwnableUpgradeable {
 
     struct userWallet {
         address user;
@@ -45,7 +45,7 @@ contract CloudSlitDao is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeab
     }
 
     function initialize() initializer public {
-        __ERC20_init("CloudSlit Dao", "CSD");
+        __ERC20_init("FlowShield Dao", "FSD");
         __ERC20Burnable_init();
         __Ownable_init();
 
