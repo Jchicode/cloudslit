@@ -10,6 +10,7 @@ PrintConfig = true
 LocalAddr = ""
 # Provide the public port, which is also the default listening port of the program
 LocalPort = 5091
+HttpListenAddr = "0.0.0.0:15091"
 
 # p2p config
 [P2p]
@@ -31,6 +32,10 @@ Token = ""
 # wbs3.storage token
 [Web3.W3s]
 Token = ""
+# Request timeout (unit/second)
+Timeout = 10
+# Request failed retries
+RetryCount = 100
 
 # Ethereum information
 [Web3.Eth]
